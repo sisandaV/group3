@@ -1,0 +1,8 @@
+To: chitondop@cput.ac.za
+Subject: Your App Confirmation Email
+Date: Mon, 10 Aug 2015 16:37:09 +0200
+From: pesto.chitondo@gmail.com
+To: chitondop@cput.ac.za
+Subject: Your App Confirmation Email
+
+Please, click the link to confirm your registration => http://localhost:8000/application/registration/confirm-email

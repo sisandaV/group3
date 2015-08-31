@@ -1,0 +1,8 @@
+To: melissahall@gmail.com
+Subject: Your App Confirmation Email
+Date: Mon, 10 Aug 2015 17:00:07 +0200
+From: pesto.chitondo@gmail.com
+To: melissahall@gmail.com
+Subject: Your App Confirmation Email
+
+Please, click the link to confirm your registration => http://localhost:8000/application/registration/confirm-email

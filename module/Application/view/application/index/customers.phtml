@@ -1,0 +1,23 @@
+<?php $title = 'My customers';
+ $this->headTitle($title);
+ ?>
+ <h1><?php echo $this->escapeHtml($title); ?></h1>
+ 
+
+ <table class="table">
+ <tr>
+     <th>Title</th>
+     <th>Artist</th>
+     <th>Body</th>
+     <th>Payment</th>
+     <th>&nbsp;</th>
+ </tr>
+ <?php foreach ($customers as $cust) : ?>
+ <tr>
+     <td><?php echo $this->escapeHtml($cust->email);?></td>
+     <td><?php echo $this->escapeHtml($cust->subject);?></td>
+     <td><?php echo $this->escapeHtml($cust->body);?></td>
+     <td><?php echo $this->escapeHtml($cust->payment);?></td> 
+ </tr>
+ <?php endforeach; ?>
+ </table>

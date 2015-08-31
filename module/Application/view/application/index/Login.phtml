@@ -1,0 +1,103 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('THE ' . $this->translate('HOMESTEAD'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/style_2.css')
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+        <div class="container_2">
+            <header class="mainHeader">
+                <div class='logo'>
+                    <div class="social">
+                        <p><b>Follow Us</b></p>
+                        <a href="https://twitter.com/@homesteadpsc"><img src='img/icons/twitter.png' width="50" height="40"/></a>
+                        <a href="https://www.facebook.com/TheHomesteadProjectStreetChildren?fref=ts"><img src='img/icons/facebook_2.png' width="50" height="40"/></a><br/><br/>
+                        <p id="login"><a href="<?php echo $this->url('login') ?>"><?php echo $this->translate('Login') ?></a> |
+                            <a href="<?php echo $this->url('register') ?>"><?php echo $this->translate('Register') ?></a> </p>  
+                    </div>
+                    <img src=""/>
+                </div>
+
+                <nav id="nav">
+                        <ul>
+                            <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('HOME') ?></a></li>
+                            <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('ABOUT') ?></a></li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+
+                                    GALLERY <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="<?php echo $this->url('gallery/photos') ?>">PHOTOS</a></li>
+                                    <li><a href="<?php echo $this->url('gallery/videos') ?>">VIDEOS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="<?php echo $this->url('donate') ?>"><?php echo $this->translate('DONATE') ?></a></li>
+                            <li><a href="<?php echo $this->url('volunteering') ?>"><?php echo $this->translate('VOLUNTEERING') ?></a></li>
+                        </ul>
+
+                    <div class="clear"></div>
+                </nav>  
+            </header>
+            <div class='c'></div>
+         <div class="home-wrapper">
+              
+<?php echo $this->escapeHtml($this->messages); ?>
+            
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('application', array('controller' => 'index', 'action' => 'login')));
+$form->prepare();
+
+echo $this->form()->openTag($form);
+echo "<br/>";
+echo $this->formRow($form->get('usr_name'));
+echo "<br/>";
+echo $this->formRow($form->get('usr_password'));
+echo "<br/>";
+echo $this->formRow($form->get('rememberme'));
+echo "<br/>";
+echo $this->formSubmit($form->get('submit'));
+echo "<br/>";
+echo $this->form()->closeTag();
+?>
+<?php // view helper
+    if ($user = $this->identity()) {
+        echo 'Logged in as ' . $this->escapeHtml($user->usr_name);
+?>		
+ | <a href="<?php echo $this->url('application/default', array('controller' => 'index', 'action' => 'logout'));?>"><?php echo $this->translate('Logoutt'); ?></a> 
+<?php
+    } else {
+        echo 'Not logged in';
+    }
+?>
+<p>
+	<a href="<?php echo $this->url('application/default', array('controller' => 'registration', 'action' => 'register'));?>"><?php echo $this->translate('Register'); ?></a> |  
+	<a href="<?php echo $this->url('application/default', array('controller' => 'registration', 'action' => 'forgotten-password'));?>"><?php echo $this->translate('Forgotten Password'); ?></a>
+</p>
+         </div>
+<footer class="mainFooter">
+            <h2>Our Sponsors</h2>
+            <p>Copyright by <a href="#">Jonas Esethu</a> &COPY;2015.All rights reserved.</p>
+        </footer>
+</div>
+    </body>
+</html>
+

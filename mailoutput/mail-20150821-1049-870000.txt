@@ -1,0 +1,8 @@
+To: jonas.gift83@gmail.com
+Subject: Your App Confirmation Email
+Date: Fri, 21 Aug 2015 12:49:25 +0200
+From: jonas.gift83@gmail.com
+To: jonas.gift83@gmail.com
+Subject: Your App Confirmation Email
+
+Please, click the link to confirm your registration => http://localhost:8000/application/registration/confirm-email

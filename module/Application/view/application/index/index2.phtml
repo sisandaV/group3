@@ -1,0 +1,127 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('THE ' . $this->translate('HOMESTEAD'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/style1.css')
+                ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+        ?>
+
+        <!-- Scripts -->
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+  <div class="container">
+    <div class="navbar-header"> 
+      <!-- Button for smallest screens -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img src="img/images/logo.png" alt="logo"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav pull-right">
+       </br> <li class="active" ><a href="#">Home</a></li>
+     <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About Us') ?></a></li>
+        <li><a href="<?php echo $this->url('kidney') ?>"><?php echo $this->translate('Kidney disease') ?></a></li>
+        <li><a href="<?php echo $this->url('events') ?>"><?php echo $this->translate('Events') ?></a></li>
+        <li><a href="<?php echo $this->url('gallery') ?>"><?php echo $this->translate('Gallery') ?></a></li>
+          <li><a href="<?php echo $this->url('blog') ?>"><?php echo $this->translate('blog') ?></a></li>
+          <li><a href="<?php echo $this->url('donations') ?>"><?php echo $this->translate('Donations') ?></a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="sidebar-right.html">Right Sidebar</a></li>
+            <li><a href="#">Dummy Link1</a></li>
+            <li><a href="#">Dummy Link2</a></li>
+            <li><a href="#">Dummy Link3</a></li>
+          </ul>
+        </li>
+          
+        
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<!-- /.navbar --> 
+
+
+
+
+
+
+
+
+
+
+        
+     <!--  <div id="wrapper">
+		<div id="header">
+                    <a href="<?php echo $this->url('home') ?>" class="logo"><img src="img/images/logo.png" width="250" height="109" /></a>																																																																																																																							
+			
+                        <br>
+			<img src="../img/images/lol.jpg" width="942" height="320" border="0" usemap="#Map" />
+		</div>
+		<div id="content">																																																																																																																																						
+			<div id="blocks">
+				<img src="img/images/3top.gif" width="942" height="10" /><br />																																																																																																						
+				<div class="grid">
+					<h3>kidney 30 year wait.</h3>
+					<img src="img/images/pic1.jpg" width="268" height="75" class="image" />
+					<p>Illum secundum exerci erat plaga illum, enim, venio. Tamen causa ut diam torqueo sagaciter inhibeo si quae exerci lobortis. Appellatio vel hos autem, ludus luptatum mauris ratis jugis inter- dico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. </p>
+					<a href="#" class="read_more">read more</a>
+				</div>
+				<div class="grid2">
+					<h3>I dont know</h3>
+					<img src="img/images/pic2.jpg" width="268" height="75" class="image" />
+					<p>Illum secundum exerci erat plaga illum, enim, venio. Tamen causa ut diam torqueo sagaciter inhibeo si quae exerci lobortis. Appellatio vel hos autem, ludus luptatum mauris ratis jugis inter- dico. Gilvus consequat abico demoveo lenis validus typicus ut commodo. </p>
+					<a href="#" class="read_more">read more</a>
+				</div>
+				<div class="grid">
+					<h3>News And Events</h3> 
+				<div class="fb-page" data-href="https://www.facebook.com/facebook" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+				</div>
+				<img src="img/images/3bot.gif" width="942" height="9" /><br />			
+			</div>
+		</div>-->
+    
+     
+		<div id="footer">
+			<div id="bottom_navigation">
+				<a href="index2.html"><img src="img/images/f.png" alt="" width="100" height="25" /></a>                                                                                                                                                                                                                                                                                                                                                                                                                                   <div class="inner_copy"><a href="http://www.webbuildersguide.com/website-builder-categories/best-website-builders-for-nonprofit-organizations/">Source: Best Website Builders for Nonprofit Organizations</a></div>
+				<a href="index2.html"><img src="img/images/g.png" alt="" width="100" height="25" /></a>                         
+				<a href="index2.html"><img src="img/images/l.jpg" alt="" width="130" height="25" /></a>                        
+				<a href="index2.html"><img src="img/images/m.png" alt="" width="100" height="25" /></a>               
+
+			</div>
+			<div id="copy">
+				Copyright &copy;. All rights reserved. 																																																																																																																																														 
+			</div>
+		</div>
+	</div>
+<map name="Map">
+	<area shape="rect" coords="145,270,336,295" href="#">
+</map>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

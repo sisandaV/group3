@@ -1,0 +1,224 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Cape Kidney Association">
+	<meta name="author" content="Group 3">	
+	<title>Gallery: Cape Kidney Association</title>
+	<link rel="favicon" href="images/favicon.png">	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" >
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css">
+	
+        
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img style="position:absolute; top:15px;" src="images/logo.png" alt="logo"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<ul class="nav navbar-nav pull-right">
+			    <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                            <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About Us') ?></a></li>
+                            <li><a href="<?php echo $this->url('kidney') ?>"><?php echo $this->translate('Kidney disease') ?></a></li>
+                             <li><a href="<?php echo $this->url('events') ?>"><?php echo $this->translate('Events') ?></a></li>
+                             <li><a href="<?php echo $this->url('gallery') ?>"><?php echo $this->translate('Gallery') ?></a></li>
+                              <li><a href="<?php echo $this->url('blog') ?>"><?php echo $this->translate('blog') ?></a></li>
+                              <li><a href="<?php echo $this->url('donations') ?>"><?php echo $this->translate('Donations') ?></a></li>
+                             <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="sidebar-left.html">Left Sidebar</a></li>
+							<li><a href="sidebar-right.html">Right Sidebar</a></li>
+						</ul>
+					</li>
+					<li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+					<li class="active"><a class="btn" href="register">SIGN IN / SIGN UP</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">Registration</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-xs-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Registration</h1>
+				</header>
+				
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center">Register a new account</h3>
+							<p class="text-center text-muted">Lorem ipsum dolor sit amet, <a href="signin.html">Login</a> adipisicing elit. Quo nulla quibusdam cum doloremque incidunt nemo sunt a tenetur omnis odio. </p>
+							<hr>
+
+							<form>
+								<div class="top-margin">
+									<label>First Name</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="top-margin">
+									<label>Last Name</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="top-margin">
+									<label>Email Address <span class="text-danger">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="row top-margin">
+									<div class="col-sm-6">
+										<label>Password <span class="text-danger">*</span></label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="col-sm-6">
+										<label>Confirm Password <span class="text-danger">*</span></label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-8">
+										<label class="checkbox">
+											<input type="checkbox"> 
+											I've read the <a href="page_terms.html">Terms and Conditions</a>
+										</label>                        
+									</div>
+									<div class="col-lg-4 text-right">
+										<button class="btn btn-action" type="submit">Register</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>	<!-- /container -->
+	
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 panel">
+						<h3 class="panel-title">Latest News</h3>
+						<div class="panel-body">
+							<p>Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin convallis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit malesuada. Sed non risus eget dolor amet vestibulum ullamcorper. Integer feugiat molestie.</p> 
+						</div>
+					</div>
+
+					<div class="col-md-4 panel contact"> 
+						<h3 class="panel-title">Contact Info</h4>
+						<div class="panel-body">
+						<p>The Cape Kidney Association is managed by Molly Fabe, Executive Manager, and assisted by Vanessa Hallet, Office Administrator.</p>
+						<ul>
+						  <li><i class="fa fa-phone"></i>021 761 1326</li>
+						  <li><a href="mailto:capekidney@xsinet.co.za"><i class="fa fa-envelope-o"></i> capekidney@xsinet.co.za</a></li>
+						  <li><i class="fa fa-flag"></i>17 Torrens Road Golf Link Estate Wynberg 7800</li>
+						</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 panel">
+						<h3 class="panel-title">Follow Us</h3>
+						<div class="panel-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+								<a href=""><i class="fa fa-youtube fa-2"></i></a>
+								<a href=""><i class="fa fa-pinterest fa-2"></i></a>
+							</p>	
+						</div>
+					</div>
+			
+				</div> <!-- /row of panels -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="simplenav">
+								<a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a> | <a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About Us') ?></a> | <a href="<?php echo $this->url('kidney') ?>"><?php echo $this->translate('Kidney disease') ?></a> | <a href="<?php echo $this->url('events') ?>"><?php echo $this->translate('Events') ?></a> | <a href="<?php echo $this->url('gallery') ?>"><?php echo $this->translate('Gallery') ?></a> </p>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="text-right">
+								<a href="index2.html"><img src="img/images/f.png" alt="" width="100" height="25" /></a>                                                                                                                                                                                                                                                                                                                                                                                                                                  
+				<a href="index2.html"><img src="img/images/g.png" alt="" width="100" height="25" /></a>                         
+				<a href="index2.html"><img src="img/images/l.jpg" alt="" width="130" height="25" /></a>                        
+				<a href="index2.html"><img src="img/images/m.png" alt="" width="100" height="25" /></a>               
+ 
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of panels -->
+			</div>
+		</div>
+
+	</footer>	
+		
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster, is what I heard. -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/jQuery.headroom.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

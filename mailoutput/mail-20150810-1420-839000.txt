@@ -1,0 +1,8 @@
+To: pesto.chitondo@gmail.com
+Subject: Your App Confirmation Email
+Date: Mon, 10 Aug 2015 16:20:48 +0200
+From: pestoshits@yahoo.com
+To: pesto.chitondo@gmail.com
+Subject: Your App Confirmation Email
+
+Please, click the link to confirm your registration => /application/registration/confirm-email
